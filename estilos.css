@@ -41,7 +41,7 @@ a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */
 }
 .botonMenu {      /* estilo para cada botón del menu de navegación, asignación de fuente y su color */ 
 	float: left;
-	color: #a8a1a1;
+	color: #a8a1a2;
 	text-align: center;
 	text-decoration: none;
 	font-size: 25px;
