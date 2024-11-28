@@ -1,0 +1,525 @@
+@charset "UTF-8";
+
+@font-face { /* se importa la fuente a utilizar*/  
+	font-family: quick;
+	src: url(fonts/static/Quicksand-Regular.ttf);
+}
+
+body { /* se establecela imagen de fondo y el color*/                      
+	background-color:#eff3e2fa;                    
+	background-image: url(imagenes/marfil.jpg);
+	background-repeat: repeat;
+}
+a:link {
+	color: #a5644a;
+	text-decoration:none; /* para que no subraye los vínculos */ 
+    font-weight: bold;
+}
+a:hover {    /* indica el estilo cuando el cursor está sobre el elemento */ 
+	color: #0e0c0e;
+}
+
+.footer { /* Estilo del footer del sitio, o pie de página*/
+	position: absolute;
+	bottom: 0px;
+	width: 100%; 
+	margin: auto;  
+	text-align: center;
+	background-color:rgb(121, 69, 27);
+	font-family: "quick";
+	font-weight: 300;
+	color: #d0d4b6; 
+  }
+.menunav {     
+    position:relative;
+    text-align: center;
+	left:10px;
+	float:center;
+	margin: auto;
+	margin-bottom: 30px;
+	max-width: 800px;
+}
+.botonMenu {      /* estilo para cada botón del menu de navegación, asignación de fuente y su color */ 
+	float: left;
+	color: #a8a1a1;
+	text-align: center;
+	text-decoration: none;
+	font-size: 25px;
+	width: 150px; 
+	font-family: "quick", monospace;
+	background-color: #a74c18;
+	cursor: pointer;
+	padding: 5 10 6 8;
+}
+.botonMenu:link {
+	color:#9e2525;
+	text-decoration: none;	
+	cursor: pointer;
+}
+.botonMenu:hover { /* para cuando se pasa sobre el botón*/
+	color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	cursor:pointer;
+}   
+
+/* elementos del menu desplegable*/
+#btn-menu {
+    display: none;   /* oculta el checkbox cuando no es necesario*/
+} 
+header {
+    width: 100%;
+	z-index: 10;	/* coloca el checkbox por encima del contenido*/
+} 
+header label {     /* coloca el checkbox en un lugar y tamaño exactos*/
+    display: none;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    left: 20px;
+    top: 50px;
+} 
+header label:hover {
+    cursor: pointer;    /* cambia el cursor sobre el checkbox para indicar la interacción*/
+}
+    .menu ul3{
+    margin-left: 20px;
+    list-style: none;     /* para evitar los bullit list en la lista*/
+    padding: 0;
+    display: flex;
+}
+    .menu li3{
+    width: 160px;
+    height: 30px;
+    font-size: 14px;
+	text-align: center;
+    text-decoration: none; 
+    margin-bottom: 10px;
+} 
+    .menu li3 a {
+    display: block;
+    font-family: "quick";
+    text-align: center;
+	background-color: #9e2525;
+    color: #f1eaea;
+    text-decoration: none;    
+    padding-top:6px;    
+}
+    .menu li3 a:hover {
+    color:#FFFFFF;
+	text-shadow: 1px 1px #000000;	
+	background-color: #a5644a;
+    height: 30px;
+    padding-top:6px;
+}  
+
+h1{     /* estilo para los titulares de tipo h1*/ 
+	font-family: Arial, Helvetica, sans-serif; /* la fuente se asigna según disponibilidad */
+	color:#a74c18;
+	font-size: 36px;
+	font-weight: bold;
+	text-shadow: 1px 1px #000000;
+	text-align: center;
+	max-width: 640px; 
+	margin:auto;         
+	margin-bottom:10px;
+} 
+h1:link {
+	cursor: pointer;
+	text-decoration: none;   
+	color:#553914;
+}
+h2 { /* estilo para los titulares de tipo h2*/ 
+	font-family: Georgia, 'Times New Roman', Times, serif;  /* solo si se suministra el archivo de la fuente */
+	color:#a74c18;
+	font-size: 28px;
+	font-weight: normal;
+	text-align: left;
+	max-width: 720px;
+	margin:auto;
+	padding:44px 0px 2px 10px;  
+}
+h3 { /* estilo para los titulares de tipo h3*/ 
+	font-family: Georgia, 'Times New Roman', Times, serif;  
+	color:#a74c18;
+	font-size: 24px;
+	font-weight: normal;
+	text-align: left;
+	max-width: 720px;
+	margin:auto;
+	padding:44px 0px 2px 10px; 
+}
+h4 { /* estilo para los titulares de tipo h4*/ 
+	font-family: Georgia, 'Times New Roman', Times, serif;  
+	color:#a74c18;
+	font-size: 20px;
+	font-weight: normal;
+	text-align: left;
+	max-width: 720px;
+	margin:auto;
+	padding:44px 0px 2px 10px;  
+}
+h4:link {
+	cursor: pointer;
+	text-decoration: none;  /* para que no subraye los vínculos en los titulares*/ 
+	color:#553914;
+}
+.uno { /* primer estilo del párrafo y el más general*/
+	position: relative;
+	max-width:720px;
+	top: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: "quick";  /* solo si se suministra el archivo de la fuente */
+	font-size: 20px;
+	font-weight: normal;
+	text-align: justify;
+	color:#000000;
+}
+.dos {  /* estilo para imágenes centradas.*/
+	position: relative;
+	max-width:720px;
+	top: 20px;
+	bottom: 20px;
+	box-shadow: 15px 15px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin: auto;
+}
+.dossin{ /* similar al anterior, pero sin sombreado*/
+	position: relative;
+	max-width:720px;
+	top: 20px;
+	bottom: 20px;
+	margin: auto;
+}
+.tres { /* para imágenes en párrafo, orientadas a la izquierda*/
+	position: relative;
+	float: left;
+	top: 20px;
+    left: 0px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+.cuatro{ /* párrafo para texto con un interlineado especial */
+	position: relative;
+	max-width:720px;
+	min-height: 300px;
+	top: 20px;
+	margin-bottom: 20px;
+	margin:auto;  
+	font-family: "quick";  /* solo si se suministra el archivo de la fuente */
+	font-size: 30px;
+	font-weight: normal;
+	text-align: justify;
+	color:#000000;
+	line-height: 3;
+}
+
+.cinco{ /* estilo para imagen central*/
+	position: relative;
+	max-width:720px;
+	min-height: 250px;
+	top: 20px;
+	margin-bottom: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: "quick";  /* solo si se suministra el archivo de la fuente */
+	font-size: 18px;
+	font-weight: normal;
+	text-align: center;
+	color:#000000;
+	line-height: 3;
+}
+.seis{ /* nuevo estilo de párrafo con fuente tamaño 18.*/
+	position: relative;
+	max-width:720px;
+	min-height: 250px;
+	top: 20px;
+	margin-bottom: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: "quick";  /* solo si se suministra el archivo de la fuente */
+	font-size: 18px;
+	font-weight: normal;
+	text-align: justify;
+	color:#000000;
+}
+
+.siete { /* para imágenes en párrafo, orientadas a la derecha*/
+	position: relative;
+	float: right;
+	top: 20px;
+    left: 10px;
+	box-shadow: 5px 5px 5px 0 rgba(0, 0, 0, 0.5); /* r, g, b, alfa (transparencia) */
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+.ocho{ /* estilo de párrafo con fuente tamaño 18 e interlineado de 1.5*/
+	position: relative;
+	max-width:720px;
+	min-height: 300px;
+	top: 20px;
+	margin-bottom: 20px;
+	margin:auto;  /* margen igual a izquierda y derecha */
+	font-family: "quick";  /* solo si se suministra el archivo de la fuente */
+	font-size: 18px;
+	font-weight: normal;
+	text-align: justify;
+	color:#000000;
+	line-height: 1.5;
+}
+ul {        /* estilo para las listas en contenidos */ 
+	list-style-type: circle;
+    list-style-position: outside;
+	margin: auto;
+	max-width:720px;
+	position: relative;
+    top: 10px;
+	font-family: "quick";
+	font-size: 22px;
+	text-align: justify;
+	color:#000000;
+	padding-bottom: 10px;
+}
+div#navigation {
+	position: relative;
+	margin: auto;
+	max-width: 720px;
+	width: 100%; }
+ul1 {        /* estilo para las listas en referencias a dos columnas*/ 
+	width: 33%;
+	list-style-type: circle;
+    list-style-position: outside;
+	margin:auto;
+	margin-bottom:20px;
+	position: relative;
+	overflow:hidden;
+    top: 10px;
+	left: 20px;
+	font-family: "quick";
+	font-size: 16px;
+	text-align: justify;
+	color:#000000;
+	padding-bottom: 10px;
+}
+li1 {
+	font-family: "quick";
+	line-height:1.5;
+	float:left;
+	display:inline;
+	width: 50%;
+}
+/*Estilo para el div en el que está contenido el mapa interactivo*/
+.mapa_firenze {
+	position:relative; 
+	font-size:1.15em;
+	color:#000000;
+	background-color:#eff3e2fa;
+	border: 3px solid #d0d4b6;
+	box-shadow:2px 2px 5px black;
+	width: 90%;
+	padding: 1%;
+	margin:auto;
+    margin-bottom:15px;
+	display:block;
+}
+/*Estilo para la imagen del mapa interactivo*/
+.mapa {
+	width: 98%;
+	display: block;
+	margin: auto;
+}
+
+/*Estilos para cada uno de los botones en el mapa interactivo*/
+.tren{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:8%;
+	left:50%;
+}
+.rio {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:70%;
+	left:55%;
+}
+.hotel {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:17%;
+	left:79%;
+}
+.hostal {
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:17%;
+	left:12%;
+}
+.uffizzi{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:55%;
+	left:60%;
+}
+.academia{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:40%;
+	left:14%;
+}
+.duomo{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:40%;
+	left:40%;
+}
+.novella{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:25%;
+	left:58%;
+}
+.gelatto{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:32%;
+	left:83%;
+}
+.bistecca{
+	position:absolute;
+	z-index:2;
+	width:4%;
+	bottom:67%;
+	left:26%;
+}
+/*Estilo para los párrafos*/
+.im {
+	font-size:1.2em;
+	color:#000000;
+	background-color:#eff3e2fa;
+	width: 90%;
+    margin: auto;
+	padding: 1%;
+	display:block;
+}
+/*Estilo para la imagen en el párrafo de información sobre el mapa interactivo*/
+.imgM {
+	max-width: 20%;
+	float:right;
+	margin:2%;
+	border: 1px solid #FFFFFF;
+	box-shadow:1px 1px 4px black;
+}
+
+
+
+@media only screen and (min-width:1200px)
+{
+	.menu{
+		position:relative;
+		text-align: center;
+		left:10px;
+		float:center;
+		margin: auto;
+		margin-bottom: 30px;
+		max-width: 800px;	
+	}
+}
+@media only screen and (min-width:800px) and (max-width: 1200px) {
+    .menunav {
+    max-width:500px;  /* esto es para que la primera fila tenga máximo tres botones*/
+}
+.uno{
+	font-size: 17px;	
+	margin: auto;
+}
+.tres
+{
+	max-width: 40%;
+}
+.cuatro
+{
+	font-size: 17px;
+	line-height: 1.5;
+}
+.seis
+{
+	line-height: 1.2;
+}
+.siete{
+	max-width: 40%; 
+}
+.menu{
+	position:relative;
+	text-align: center;
+	left:10px;
+	float:center;
+	margin: auto;
+	margin-bottom: 30px;
+	max-width: 800px;
+}
+}
+
+@media only screen and (max-width: 800px) { /*Pantallas de celular*/
+	.menunav {
+		max-width:460px;  /* esto es para que la primera fila tenga máximo dos botones*/
+	}
+	.uno{
+		max-width: 480px;
+		font-size: 18px;
+		line-height: 1.5;	
+		margin: auto;
+	}
+	.dos{
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	.dossin
+	{
+		max-width:480px;
+	}
+	.tres
+	{
+		max-width: 40%;
+    }
+	.cuatro
+	{
+		font-size: 20px;
+		line-height: 2;
+		max-width: 480px;
+	}
+	.seis
+	{
+		line-height: 1.5;
+	}
+	.siete{
+		max-width: 40%; 
+	}
+	header label{
+        display: block; /* se muestra el checkbox cuando se reduce la ventana*/
+    } 
+    .menu {
+        position: fixed;  /* sostiene la posición aunque se haga scroll en el contenido */
+        background: rgba(0.5, 0.5, 0.5, 0.2); /* rojo, verde, azul, alpha (transparencia) */
+		z-index: 20; /* para asegurar que el menu esta por encima de todo lo demás*/
+        width: 40%; /* se refiere al ancho del fondo del menu y no a los botones */
+        margin-left: -60%; /* se oculta porque se coloca por fuera de la ventana*/
+		margin-top: 4px;
+        transition: all 2s;   /* la animación de desplegar el menu dura 1 segundo*/
+    } 
+    .menu ul3 {
+        flex-direction: column;  /* se despliega en sentido vertical*/
+    } 
+    .menu li3 {
+    font-family: "quick";
+    }
+    #btn-menu:checked ~ .menu {  /* el checkbox controla las dos posiciones del menu */
+        margin: 1px; 
+    } 
+}
+
